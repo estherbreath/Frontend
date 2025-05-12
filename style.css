@@ -1,4 +1,10 @@
- 
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+
 .landing {
     background-image: url(https://as2.ftcdn.net/v2/jpg/05/99/74/03/1000_F_599740318_YpZIXZ4IqJ85Fz2mm1VpzgyXyMKUDEmv.jpg);
     background-repeat: no-repeat;
@@ -93,4 +99,76 @@ nav h3 {
     height: 333px;
 
 }
+
+/* Extra small devices (phones, 0 - 575px) */
+@media (max-width: 575px) {
+  .landing {
+    height: 400px;
+    background-position: top;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav h1, nav h3 {
+    margin: 10px 0;
+    text-align: center;
+  }
+
+  .home {
+    height: auto;
+    padding: 20px;
+  }
+
+  .first-button {
+    flex-direction: column;
+  }
+
+  .first-button input, .first-button button {
+    width: 80%;
+    margin: 10px 0;
+  }
+
+  .my-images {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .my-images img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+/* Media Query */
+
+ /* Small devices  */
+@media (min-width: 576px) and (max-width: 767px) {
+  .my-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Medium devices*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .my-images {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Large devices*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .my-images {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Extra large devices*/
+@media (min-width: 1200px) {
+  .my-images {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
 
