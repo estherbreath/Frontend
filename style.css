@@ -30,9 +30,10 @@ nav h1 {
     font-weight: 500;
 }
 
-nav h3 {
+nav button {
     margin-top: 20px;
     margin-right: 60px;
+    padding: 10px;
     color: white;
     background-color: red;
     padding: 4PX 8PX;
